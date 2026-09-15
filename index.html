@@ -224,10 +224,10 @@
 </div>
 
 <script>
-const BUY_IN = 100;
-const WEEKLY_PRIZE = 30;
-const FIRST_PLACE_PRIZE = 500;
-const SECOND_PLACE_PRIZE = 250;
+const BUY_IN = 75;
+const WEEKLY_PRIZE = 20;
+const FIRST_PLACE_PRIZE = 300;
+const SECOND_PLACE_PRIZE = 170;
 
 let LEAGUE = null;   // raw loaded JSON
 let TEAMS = {};      // id -> team object
@@ -628,6 +628,7 @@ function renderStandings() {
         $${BUY_IN} buy-in per team · $${WEEKLY_PRIZE} weekly high-score prize ·
         $${FIRST_PLACE_PRIZE}/$${SECOND_PLACE_PRIZE} for 1st/2nd at the championship
       </p>
+      <p class="sub" style="color:var(--gold);">Questions about championship payouts? Ask Commissioner Tommy.</p>
       <label style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--text-muted); margin-bottom:12px; cursor:pointer;">
         <input type="checkbox" id="champToggle"> Season is over — apply championship prizes to current standings
       </label>
